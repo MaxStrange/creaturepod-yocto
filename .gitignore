@@ -1,0 +1,24 @@
+# Yocto
+poky/
+
+# Build
+bblayers.conf
+local.conf
+templateconf.cfg
+downloads/
+tmp/
+cache/
+sstate-cache/
+bitbake-cookerdaemon.log
+pi.img
+
+# Layers
+meta-raspberrypi/
+meta-splash/
+meta-openembedded/
+
+# Secrets
+meta-creaturepod/recipes-core/network/files/host-fragment
+
+# VSCode
+.vscode/
