@@ -1,6 +1,6 @@
 #! /bin/bash
-IMAGESDIR=$(pwd)/build/tmp/deploy/images/raspberrypi5-64
-RTFS_NAME="creaturepod-image-dev-raspberrypi5-64.tar.bz2"
+IMAGESDIR=$(pwd)/build/tmp/deploy/images/raspberrypi5
+RTFS_NAME="creaturepod-image-dev-raspberrypi5.rootfs.tar.bz2"
 
 # All the stuff we need to copy to the SD card image
 KERNELIMG=${IMAGESDIR}/Image
@@ -74,7 +74,7 @@ sudo mount -o loop "${LOOPDEV}"p1 /tmp/mnt
 sudo cp -r "${BOOTFILESDIR}"/* /tmp/mnt/
 sudo cp ${DTBS} /tmp/mnt/
 sudo mkdir /tmp/mnt/overlays
-for f in $( ls "${IMAGESDIR}"/*.dtbo | grep -v -e "-raspberrypi5-64" )
+for f in $( ls "${IMAGESDIR}"/*.dtbo | grep -v -e "-raspberrypi5" )
 do
     if [ -L ${f} ]; then
         sudo cp ${f} /tmp/mnt/overlays/
