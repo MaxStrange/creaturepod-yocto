@@ -6,6 +6,7 @@ inherit creaturepod-image-base
 IMAGE_FEATURES += "bash-completion-pkgs"
 IMAGE_FEATURES += "debug-tweaks"
 IMAGE_FEATURES += "package-management"
+IMAGE_FEATURES += "x11"
 
 IMAGE_INSTALL += " vim \
                    openocd \
