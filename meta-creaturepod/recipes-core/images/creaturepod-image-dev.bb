@@ -3,6 +3,10 @@ LICENSE = "MIT"
 
 inherit creaturepod-image-base
 
+IMAGE_FEATURES += "bash-completion-pkgs"
+IMAGE_FEATURES += "debug-tweaks"
+IMAGE_FEATURES += "package-management"
+
 IMAGE_INSTALL += " vim \
                    openocd \
                    openssh \

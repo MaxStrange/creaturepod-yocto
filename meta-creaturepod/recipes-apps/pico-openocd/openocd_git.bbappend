@@ -4,19 +4,9 @@ DESCRIPTION = "${SUMMARY}"
 # Need to add another SWD OpenOCD config file
 FILESEXTRAPATHS:prepend := "${THISDIR}/files:"
 
-## We use a different branch (base recipe uses master)
-#SRC_URI = " \
-#    git://github.com/raspberrypi/openocd.git;protocol=http;name=openocd;branch=rp2040 \
-#    git://repo.or.cz/r/git2cl.git;protocol=http;destsuffix=tools/git2cl;name=git2cl;branch=master \
-#    git://repo.or.cz/r/jimtcl.git;protocol=http;destsuffix=git/jimtcl;name=jimtcl;branch=master \
-#    git://repo.or.cz/r/libjaylink.git;protocol=http;destsuffix=git/src/jtag/drivers/libjaylink;name=libjaylink;branch=master \
-#    file://raspberrypi-pico-swd.cfg \
-#"
-#SRCREV_FORMAT = "openocd"
-#SRCREV_openocd = "8e3c38f78730ce878ff81448bc3f6c1e6bb06e13"
-#
-## We want to enable rpi GPIO for openOCD debug/FW loading
-#EXTRA_OECONF += " --enable-bcm2835gpio"
+SRC_URI += " \
+    file://raspberrypi-pico-swd.cfg \
+"
 
 # Add another raspberrypi OpenOCD config to OpenOCD's interfaces folder
 do_install:append() {

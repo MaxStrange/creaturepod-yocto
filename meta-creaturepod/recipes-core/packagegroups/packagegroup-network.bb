@@ -1,9 +1,8 @@
-DESCRIPTION = "NetworkManager and nmtui packages along with dependencies."
+DESCRIPTION = "NetworkManager along with dependencies."
 
 inherit packagegroup
 
 PACKAGES = "${PN}"
 
 RDEPENDS:${PN} += " networkmanager \
-                    networkmanager-nmtui \
                   "
