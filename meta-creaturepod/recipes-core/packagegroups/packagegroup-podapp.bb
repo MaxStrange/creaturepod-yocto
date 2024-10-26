@@ -7,7 +7,7 @@ PACKAGES = "${PN}"
 RDEPENDS:${PN} += " python3 \
                     python3-modules \
                     python3-smbus2 \
+                    python3-picamera2 \
                     podapp \
+                    i2c-tools \
                   "
-
-#                    python3-picamera2 \

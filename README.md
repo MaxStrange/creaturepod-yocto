@@ -24,7 +24,7 @@ after running the setup script. Then run `bitbake <IMAGE>`, where <IMAGE> is one
 [ ] desktop on LCD
 [ ] Touch
 [ ] Camera Module
-[ ] Hailo
+[ ] Hailo, including PCI Gen3 (instead of Gen2)
 [ ] Application dependencies
 [ ] Use the Pico's I2C bus to querry the EEPROM from a CodecZero hat module and add the device tree overlay
 [ ] Splashscreen
