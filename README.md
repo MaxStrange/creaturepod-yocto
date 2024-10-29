@@ -17,7 +17,7 @@ after running the setup script. Then run `bitbake <IMAGE>`, where <IMAGE> is one
 
 [x] Bare bones image (boot an RPi5 image)
 [x] Ensure systemd is working
-[ ] Fonts
+[/] Fonts
 [ ] nmtui
 [ ] desktop on monitor
 [ ] Waveshare LCD
@@ -27,4 +27,5 @@ after running the setup script. Then run `bitbake <IMAGE>`, where <IMAGE> is one
 [ ] Hailo, including PCI Gen3 (instead of Gen2)
 [ ] Application dependencies
 [ ] Use the Pico's I2C bus to querry the EEPROM from a CodecZero hat module and add the device tree overlay
+[ ] Configure RPi's EEPROM on first startup to set POWER_OFF_ON_HALT=1
 [ ] Splashscreen
